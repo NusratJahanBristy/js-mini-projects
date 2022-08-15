@@ -9,8 +9,9 @@
     <style>
         body {
             text-align: center;
-            background-color:palevioletred;
+            background-color: palevioletred;
         }
+
         button {
             width: 50px;
             height: 49px;
@@ -19,6 +20,7 @@
             border: none;
             color: white;
         }
+
         p {
             font-size: 30px;
             color: white;
@@ -33,21 +35,21 @@
     <button id="minus-btn">-</button>
 
     <script>
-        let count=0;
-        function plusIcon(){
-            document.body.style.backgroundColor='green';
-            
+        let count = 0;
+        function plusIcon() {
+            document.body.style.backgroundColor = 'green';
+
             count++;
-            const counter=document.getElementById("count" );
-            counter.innerText=count;
+            const counter = document.getElementById("count");
+            counter.innerText = count;
 
         }
-        const minusbtn=document.getElementById('minus-btn');
-        minusbtn.addEventListener('click',function(){
-            document.body.style.backgroundColor='goldenrod';
+        const minusbtn = document.getElementById('minus-btn');
+        minusbtn.addEventListener('click', function () {
+            document.body.style.backgroundColor = 'goldenrod';
             count--;
-            const counter=document.getElementById("count");
-            counter.innerText=count;
+            const counter = document.getElementById("count");
+            counter.innerText = count;
         })
     </script>
     <script src="js/style.js"></script>
